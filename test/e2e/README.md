@@ -68,7 +68,7 @@ The workflow for e2e test image is
 ```mermaid
 flowchart LR
 subgraph N[osde2e-executor-* ns]
-C[ocm-agent e2e test job "(executor-*)"] --> D[ocm-agent e2e test pod "(executor-*-*)"]
+C[ocm-agent e2e test job executor-*] --> D[ocm-agent e2e test pod executor-*-*]
 
 A[osde2e image job] --> B[osd e2e image pod] --> subgraph N
 ```
