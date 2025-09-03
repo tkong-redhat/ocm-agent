@@ -69,6 +69,7 @@ The workflow for e2e test image is
 flowchart LR
 subgraph N[osde2e-executor-* ns]
 C[ocm-agent e2e test job executor-*] --> D[ocm-agent e2e test pod executor-*-*]
+end
 
 A[osde2e image job] --> B[osd e2e image pod] --> N
 ```
