@@ -17,6 +17,9 @@ updates:
       - "ok-to-test"
     schedule:
       interval: "weekly"
+    ignore:
+      - dependency-name: "go"
+        update-types: ["version-update:semver-major", "version-update:semver-minor"]
     groups:
       aws-sdk:
         patterns:
