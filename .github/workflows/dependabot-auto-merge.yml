@@ -36,6 +36,7 @@ jobs:
         run: |
           DEPENDENCY="${{ steps.metadata.outputs.dependency-names }}"
           CRITICAL_PACKAGES=(
+            "go"
             "github.com/openshift-online/ocm-sdk-go"
             "k8s.io/client-go"
             "k8s.io/api"
