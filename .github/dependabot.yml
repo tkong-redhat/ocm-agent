@@ -18,7 +18,7 @@ updates:
     schedule:
       interval: "weekly"
     ignore:
-      - dependency-name: "go"
+      - dependency-name: "toolchain"
         update-types: ["version-update:semver-major", "version-update:semver-minor"]
     groups:
       aws-sdk:
