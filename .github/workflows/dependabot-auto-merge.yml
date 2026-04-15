@@ -14,7 +14,7 @@ jobs:
   auto-merge:
     runs-on: ubuntu-latest
     # Only run for Dependabot PRs
-    if: github.actor == 'dependabot[bot]' && github.repository == 'openshift/ocm-agent'
+    if: github.actor == 'dependabot[bot]' && github.repository == 'tkong-redhat/ocm-agent'
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
